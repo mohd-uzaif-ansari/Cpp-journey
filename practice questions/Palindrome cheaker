@@ -1,0 +1,17 @@
+// 5. Palindrome Checker
+#include <iostream>
+using namespace std;
+
+int main() {
+    string str, rev;
+    cout << "Enter a string: ";
+    cin >> str;
+
+    rev = string(str.rbegin(), str.rend());
+    if (str == rev)
+        cout << str << " is a palindrome.";
+    else
+        cout << str << " is not a palindrome.";
+
+    return 0;
+}
